@@ -8,6 +8,5 @@ IP address (prepopulated with 192.168.6.2, if you are on a mac you will need to 
 The sketch sends numeric float values from 0 to 1 based on an oscillator running at 10hz (the user
 can manipulate the speed with the horizontal slider as well).
 
-As the numeric values are received on the Bela side they are plotted from left to right. on the screen
-once all pixels have been plotted from left to right the clear screen function is called and it starts
-back at the left.
+As the numeric values are received on the Bela side they are plotted from left to right.
+Once 128 pixels have been plotted from left to right the screen clears and starts plotting from the left again.
