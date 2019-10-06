@@ -1,0 +1,33 @@
+#N canvas 1261 91 517 420 10;
+#X obj 134 304 netsend -u -b;
+#X obj 134 326 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 334 287 disconnect;
+#X obj 134 248 list prepend send;
+#X obj 134 275 list trim;
+#X text 285 158 connect and test;
+#X msg 324 252 connect 192.168.6.2 7562;
+#X obj 134 221 oscformat /param1;
+#X obj 134 81 audioToControl;
+#X obj 134 156 int;
+#X floatatom 78 205 5 0 0 0 - - -;
+#X obj 134 51 +~ 1;
+#X obj 134 114 * 32;
+#X obj 134 184 * 0.01;
+#X obj 133 22 osc~ 10;
+#X obj 137 -1 hsl 128 15 0 10 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1400 1;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 3 0;
+#X connect 8 0 12 0;
+#X connect 9 0 13 0;
+#X connect 11 0 8 0;
+#X connect 12 0 9 0;
+#X connect 13 0 7 0;
+#X connect 13 0 10 0;
+#X connect 14 0 11 0;
+#X connect 15 0 14 0;
